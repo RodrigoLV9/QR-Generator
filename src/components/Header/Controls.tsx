@@ -11,7 +11,7 @@ const Controls :React.FC = () => {
   }
   return (
     <section className='controls'>
-        <select name="mode-theme" id="">
+        <select name="idiom" id="" className='idiom'>
             <option value="español">Español</option>
             <option value="english">English</option>
         </select>

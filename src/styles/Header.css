@@ -1,0 +1,40 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 15px;
+    height: 60px;
+    border-bottom: 2px solid black;
+}
+
+/* COMPONENT: BRAND */
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.brand img{
+    width:40px;
+    height: 40px;
+    filter: invert(1);
+}
+/* COMPONENT: CONTROLS */
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    height: 40px;
+    width:150px
+}
+.mode{
+    width:35px;
+    height: 35px;
+    font-size: 20px;
+    padding:5px
+}
+.idiom{
+    padding:5px;
+
+}
