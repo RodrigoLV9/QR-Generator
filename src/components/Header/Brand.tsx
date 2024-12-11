@@ -5,7 +5,11 @@ const Brand :React.FC = ()=>{
     return(
         <section className='brand'>
             <img src="../../../public/images/qr-logo.png" alt="QR" />
-            <h3>create your QR code 100% free</h3>
+            <div className="brand__text">
+                <h3>QR Code Generator</h3>
+                <p>Create your QR code 100% free</p>
+            </div>
+            
         </section>
     )
 }
