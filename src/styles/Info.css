@@ -1,0 +1,21 @@
+.info{
+    margin:auto
+}
+.info h2{
+    text-align: center;
+    padding:10px;
+    margin-bottom: 10px;
+}
+.info__card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info__card img{
+    width: 300px;
+    height: 300px;
+}
+.info__card p{
+    width: 500px;
+    padding:10px
+}
