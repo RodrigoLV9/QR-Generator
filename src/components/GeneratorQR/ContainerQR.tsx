@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContainerQR:React.FC = () => {
   return (
-    <section>
+    <section className='containerQR'>
       <div className="qr"></div>
       <div className="buttons">
         <button>Generator QR</button>

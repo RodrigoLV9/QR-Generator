@@ -3,7 +3,7 @@ import React from 'react'
 const Config:React.FC = () => {
   return (
     <section className='config'>
-      <div className="container-inpu">
+      <div className="container-input">
         <label htmlFor="">URL: </label>
         <input type="text" placeholder='Write URL...'/>
       </div>
