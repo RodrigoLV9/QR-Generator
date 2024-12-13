@@ -3,6 +3,7 @@ import Header from './components/Header/Header'
 import QRGenerator from './components/GeneratorQR/QRGenerator'
 import Info from './components/Info'
 import Footer from './components/Footer'
+import Steps from './components/Steps/Steps'
 function App() {
 
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header/> 
       <QRGenerator/>
       <Info/>
+      <Steps/>
       <Footer/>
     </div>
   )

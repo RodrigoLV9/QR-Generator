@@ -1,0 +1,67 @@
+/* COMPONENT: Steps */
+.steps{
+    position: relative;
+}
+.steps__title{
+    text-align: center;
+    padding:10px;
+    margin:40px auto;
+}
+.step{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin:30px 50px
+}
+
+
+
+/* COMPONENT: Card */
+.card{
+    width:400px;
+    padding:5px;
+}
+
+
+
+/* COMPONENT: CardImage */
+
+.cardImage img{
+    width: 350px;
+    height: 200px;
+}
+
+
+/* COMPONENT: Pillar */
+.pillar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 50%;
+    top:0;
+    margin-top: 120px;
+    cursor: pointer;
+    user-select: none;
+}
+.circle{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 92, 128, 0.281);
+    backdrop-filter: blur(5px);
+    border:1px solid rgb(3, 168, 132);
+    box-shadow: 1px 1px 3px 2px inset rgba(1, 151, 151, 0.199), -1px -1px 3px 2px rgba(1, 140, 150, 0.199) inset;
+    text-align: center;
+    padding: 12px;
+    font-weight: bolder;
+}
+.column{
+    width:2px;
+    height: 200px;
+    background-color: rgb(0, 152, 172);
+    box-shadow: 1px 1px 2px 2px rgba(3, 134, 106, 0.178), -1px -1px 2px 2px rgba(1, 163, 149, 0.178);
+}
+
+
