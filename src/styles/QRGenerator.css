@@ -13,7 +13,7 @@
 .qr{
     width:250px;
     height: 250px;
-    background-color: black;
+    background-color: rgb(179, 72, 72);
 }
 .buttons{
     display: flex;
