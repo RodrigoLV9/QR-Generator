@@ -18,7 +18,7 @@ const Config:React.FC <ConfigProps> = ({setUrl, size, setSize, setColor1, setCol
       <div className="options">
         <div className="container-input">
           <label htmlFor="">Size: {size}px</label>
-          <input type="range" name="" id="" min={50} max={250} onChange={(e)=>setSize(parseInt(e.target.value))}/>
+          <input type="range" name="" id="" min={50} max={300} defaultValue={100} onChange={(e)=>setSize(parseInt(e.target.value))}/>
         </div>
         <div className="container-input">
           <label htmlFor="">Color light:</label>

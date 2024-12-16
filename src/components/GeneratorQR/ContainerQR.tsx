@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react'
+import React, { useRef} from 'react'
 import {QRCodeSVG} from 'qrcode.react';
 
 interface ContainerQRProps {
@@ -9,13 +9,7 @@ interface ContainerQRProps {
 }
 
 const ContainerQR:React.FC <ContainerQRProps> = ({url, size, color1, color2}) => {
-  const [create, setCreate]=useState<boolean>(false)
   const qrRef=useRef<SVGSVGElement>(null)
-
-
-  const handleCreateQR=():void=>{
-    setCreate(!create)
-  }
   const handleDownload = () => {
     if (qrRef.current) {
       const svg = qrRef.current;
@@ -42,13 +36,10 @@ const ContainerQR:React.FC <ContainerQRProps> = ({url, size, color1, color2}) =>
   return (
     <section className='containerQR'>
       <div className="qr">
-        {create && (
-          <QRCodeSVG value={url} size={size} bgColor={color1} fgColor={color2} ref={qrRef} />
-        )}
+        <QRCodeSVG value={url} size={size} bgColor={color1} fgColor={color2} ref={qrRef} />
       </div>
       <div className="buttons">
-        <button onClick={handleCreateQR}>Generator QR</button>
-        <button onClick={handleDownload} >Download PNG</button>
+        <button onClick={handleDownload}>Download PNG</button>
       </div>
     </section>
   )
