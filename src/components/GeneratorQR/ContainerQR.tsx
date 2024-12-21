@@ -1,6 +1,14 @@
 import React, { useRef} from 'react'
 import {QRCodeSVG} from 'qrcode.react';
-
+import { useLanguage } from '../../LanguageContext';
+const translations={
+  en:{
+    download:'Download PNG'
+  },
+  es:{
+    download:'Descargar PNG'
+  }
+}
 interface ContainerQRProps {
   url:string,
   size:number,
@@ -33,13 +41,15 @@ const ContainerQR:React.FC <ContainerQRProps> = ({url, size, color1, color2}) =>
       img.src = `data:image/svg+xml;base64,${btoa(svgData)}`;
     }
   };
+  const {language}=useLanguage()
+  const {download}=translations[language]
   return (
     <section className='containerQR'>
       <div className="qr">
         <QRCodeSVG value={url} size={size} bgColor={color1} fgColor={color2} ref={qrRef} />
       </div>
       <div className="buttons">
-        <button onClick={handleDownload}>Download PNG</button>
+        <button onClick={handleDownload}>{download}</button>
       </div>
     </section>
   )

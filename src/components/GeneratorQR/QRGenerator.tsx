@@ -9,7 +9,7 @@ const QRGenerator:React.FC=()=>{
     const [color2, setColor2]=useState<string>('#000000')
     
     return(
-        <section className='qrGenerator'>
+        <main className='qrGenerator'>
             <Config
                 setUrl={setUrl} size={size} setSize={setSize}
                 setColor1={setColor1} setColor2={setColor2}
@@ -17,7 +17,7 @@ const QRGenerator:React.FC=()=>{
             <ContainerQR
                 url={url} size={size} color1={color1}  color2={color2}
             />
-        </section>
+        </main>
     )
 }
 
