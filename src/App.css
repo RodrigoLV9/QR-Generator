@@ -1,0 +1,18 @@
+html{
+    color-scheme: light dark;
+    background-color: var(--background-primary);
+    color: var(--color-secondary);
+}
+:root{
+    --background-primary:light-dark(#f3f7fa, #323232);
+    --background-secondary:light-dark(#ffffff, #1c1c22);
+    --color-primary:light-dark(rgb(219, 120, 7), rgb(219, 120, 7));
+    --color-secondary:light-dark(#1f1e2f,#f8f9f4);
+    --color-main:rgb(0, 127, 177);
+}
+[data-theme='dark']{
+    color-scheme: dark;
+}
+[data-theme='light']{
+    color-scheme: light;
+}

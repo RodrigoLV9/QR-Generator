@@ -3,8 +3,8 @@ header{
     align-items: center;
     justify-content: space-between;
     padding:5px 15px;
-    height: 60px;
-    border-bottom: 2px solid black;
+    height: 90px;
+    background-color: var(--background-secondary);
 }
 
 /* COMPONENT: BRAND */
@@ -14,27 +14,49 @@ header{
     justify-content: center;
     gap:10px;
 }
+.brand__text h3{
+    color:var(--color-main);
+    font-size: 1.5rem;
+}
+.brand__text p{
+    color:var(--color-primary);
+    font-weight: bold;
+}
 .brand img{
     width:40px;
     height: 40px;
-    filter: invert(1);
 }
+[data-theme='dark'] .brand img{
+    filter:invert(1) hue-rotate(180deg);
+}
+
 /* COMPONENT: CONTROLS */
 .controls{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:10px;
+    gap:20px;
     height: 40px;
-    width:150px
+    width:200px;
+    
 }
 .mode{
     width:35px;
     height: 35px;
     font-size: 20px;
-    padding:5px
+    padding:5px;
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
 }
 .idiom{
     padding:5px;
+    width:90px;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
 
+}
+.idiom option{
+    background-color: var(--background-secondary);
 }

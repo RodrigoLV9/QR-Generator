@@ -4,8 +4,8 @@ import QRGenerator from './components/GeneratorQR/QRGenerator'
 import Info from './components/Info'
 import Footer from './components/Footer'
 import Steps from './components/Steps/Steps'
-function App() {
 
+function App() {
   return (
     <div className='app'>
       <Header/> 

@@ -1,45 +1,20 @@
-/* import React from 'react'
-import { useState } from 'react';
-import { MdSunny } from "react-icons/md";
-import { FaMoon } from "react-icons/fa";
-
-const Controls :React.FC = () => {
-
-  const [mode,setMode]=useState<boolean>(true)
-  const handleMode=():void=>{
-    setMode(!mode)
-  }
-  return (
-    <section className='controls'>
-        <select name="idiom" id="" className='idiom'>
-            <option value="español">Español</option>
-            <option value="english">English</option>
-        </select>
-        <button className="mode" onClick={handleMode}>
-            {mode ? <FaMoon/> : <MdSunny/>}
-        </button>
-    </section>
-  )
-}
-
-export default Controls */
-
 import React from 'react';
-import { useState } from 'react';
 import { MdSunny } from "react-icons/md";
 import { FaMoon } from "react-icons/fa";
 import { useLanguage } from '../../LanguageContext';
-
+import { useMode } from '../../ModeContext';
 const Controls: React.FC = () => {
-  const [mode, setMode] = useState<boolean>(true);
   const { language, setLanguage } = useLanguage();
-
-  const handleMode = (): void => {
-    setMode(!mode);
-  };
 
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setLanguage(e.target.value as 'es' | 'en');
+  };
+
+
+  const {mode, setMode}=useMode()
+  const handleMode = (): void => {
+    setMode(!mode);
+    document.querySelector('html')?.setAttribute('data-theme', mode ? 'dark' : 'light');
   };
 
   return (
