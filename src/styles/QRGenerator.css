@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-around;
     padding:30px 0;
-    margin:30px auto;
+    margin:100px auto;
     border:1px solid var(--background-secondary);
     border-radius: 5px;
     width:80vw;
@@ -22,8 +22,8 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border:1px solid var(--color-primary);
-    box-shadow: 1px 1px 5px 2px rgb(26, 25, 25);
+    border:1px solid rgb(78, 78, 78);
+    box-shadow: 1px 1px 5px 2px rgb(32, 31, 31);
     font-weight: bold;
 }
 .buttons{
@@ -36,18 +36,20 @@
 .buttons button{
     width:100%;
     height: 30px;
-    background-color: rgb(255, 166, 0);
+    background-color: var(--color-primary);
     border:none;
     font-weight: bold;
     color:black;
     filter: opacity(.8);
-    transition: background-color .2s;
+    transition: all.2s;
     border-radius: 15px;
-    letter-spacing: 2px;
+    /* letter-spacing: 1px; */
+    font-size: .9rem;
     
 }
 .buttons button:hover{
-    background-color: rgb(247, 111, 0);
+    background-color: rgb(247, 169, 0);
+    letter-spacing: 1px;
 }
 /* COMPONENT: Config */
 .container-input{
@@ -55,6 +57,11 @@
     flex-direction: column;
     padding: 5px;
     margin:20px auto;
+}
+.container-input label{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
 }
 .container-input input[type='text']{
     width:300px;
@@ -64,8 +71,8 @@
     outline: none;
     background-color: transparent;
     color:var(--color-secondary);
-    border-bottom: 2px solid rgb(0, 0, 0);
-    letter-spacing: 2px;
+    font-size: .9rem;
+    border-bottom: 2px solid var(--color-main)
     
 }
 .container-input input[type='text']::placeholder{

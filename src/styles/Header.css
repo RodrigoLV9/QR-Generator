@@ -3,10 +3,10 @@ header{
     align-items: center;
     justify-content: space-between;
     padding:5px 15px;
-    height: 90px;
+    margin-bottom:70px;
+    height: 80px;
     background-color: var(--background-secondary);
 }
-
 /* COMPONENT: BRAND */
 .brand{
     display: flex;
