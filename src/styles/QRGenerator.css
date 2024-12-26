@@ -6,7 +6,7 @@
     margin:100px auto;
     border:1px solid var(--background-secondary);
     border-radius: 5px;
-    width:80vw;
+    width:90vw;
     box-shadow: 1px 1px 5px 1px rgb(73, 73, 73);
 }
 
@@ -43,7 +43,6 @@
     filter: opacity(.8);
     transition: all.2s;
     border-radius: 15px;
-    /* letter-spacing: 1px; */
     font-size: .9rem;
     
 }
@@ -52,6 +51,9 @@
     letter-spacing: 1px;
 }
 /* COMPONENT: Config */
+.config{
+    width: 300px
+}
 .container-input{
     display:flex;
     flex-direction: column;
@@ -81,4 +83,29 @@
 }
 .container-input input[type='color']{
     width:70px;
+}
+
+@media screen and (max-width: 768px){
+    .qrGenerator{
+        flex-direction: column;
+        width:70vw
+    }
+    .containerQR{
+        margin-top: 20px;
+    }
+    .container-input input[type='text']{
+        width: 100%;
+    }
+    .buttons button{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .qrGenerator{
+        width:90vw
+    }
+    .container-input{
+        margin:5px auto
+    }
 }

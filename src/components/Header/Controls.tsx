@@ -20,8 +20,8 @@ const Controls: React.FC = () => {
   return (
     <section className='controls'>
       <select name="idiom" id="" className='idiom' value={language} onChange={handleLanguageChange}>
-        <option value="es">Español</option>
-        <option value="en">English</option>
+        <option value="es">Es</option>
+        <option value="en">En</option>
       </select>
       <button className="mode" onClick={handleMode}>
         {mode ? <FaMoon /> : <MdSunny />}

@@ -37,8 +37,7 @@ header{
     justify-content: center;
     gap:20px;
     height: 40px;
-    width:200px;
-    
+    width: min-content;
 }
 .mode{
     width:35px;
@@ -51,7 +50,7 @@ header{
 }
 .idiom{
     padding:5px;
-    width:90px;
+    width:50px;
     outline: none;
     background-color: transparent;
     cursor: pointer;
@@ -59,4 +58,41 @@ header{
 }
 .idiom option{
     background-color: var(--background-secondary);
+}
+
+@media screen and (max-width: 768px){
+    header{
+        padding:5px 10px;
+    }
+    .brand__text h3{
+        font-size: 1.2rem;
+    }
+    .brand__text p{
+        font-size: 0.8rem;
+    }
+    .brand img{
+        width:30px;
+        height: 30px;
+    }
+   
+}
+@media screen and (max-width: 480px){
+    header{
+        height: 100px;
+        padding:5px 5px;
+    }
+    .brand__text h3{
+        font-size: 1rem;
+    }
+    .brand__text p{
+        font-size: 0.6rem;
+    }
+    .brand img{
+        width:25px;
+        height: 25px;
+    }
+    .controls{
+        gap:0
+    }
+    
 }

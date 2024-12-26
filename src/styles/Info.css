@@ -24,3 +24,19 @@
     font-size: 1.1rem;
     line-height: 1.5rem;
 }
+
+@media screen and (max-width:768px){
+    .info__card{
+        flex-direction: column;
+    }
+    .info__card p{
+        width:80vw;
+    }
+}
+@media  screen and (max-width:480px){
+    .info__card p{
+
+    }
+
+    
+}
