@@ -7,7 +7,7 @@ interface ModeContextValue{
 const ContextMode = createContext<ModeContextValue | undefined>(undefined);
 
 export const ModeContext:React.FC<{children:ReactNode}>=({children})=>{
-    const [mode, setMode]=useState<boolean>(true)
+    const [mode, setMode]=useState<boolean>(false)
     return(
         <ContextMode.Provider value={{mode,setMode}}>
             {children}

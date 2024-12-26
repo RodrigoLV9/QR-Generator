@@ -15,6 +15,7 @@ const Controls: React.FC = () => {
   const handleMode = (): void => {
     setMode(!mode);
     document.querySelector('html')?.setAttribute('data-theme', mode ? 'dark' : 'light');
+    
   };
 
   return (
@@ -24,7 +25,7 @@ const Controls: React.FC = () => {
         <option value="en">En</option>
       </select>
       <button className="mode" onClick={handleMode}>
-        {mode ? <FaMoon /> : <MdSunny />}
+        {mode ? <MdSunny /> : <FaMoon />}
       </button>
     </section>
   );
