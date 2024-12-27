@@ -1,12 +1,13 @@
 import React from 'react'
 
 interface Props {
-    image:string
+    image:string,
+    altItem:string
 }
-const CardImage: React.FC <Props>= ({image}) => {
+const CardImage: React.FC <Props>= ({image, altItem}) => {
   return (
     <div className="cardImage">
-        <img src={image} alt="example" />
+        <img src={image} alt={altItem} loading='lazy'/>
     </div>
   )
 }

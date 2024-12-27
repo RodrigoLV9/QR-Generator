@@ -49,7 +49,7 @@ const ContainerQR:React.FC <ContainerQRProps> = ({url, size, color1, color2}) =>
         <QRCodeSVG value={url} size={size} bgColor={color1} fgColor={color2} ref={qrRef} />
       </div>
       <div className="buttons">
-        <button onClick={handleDownload}>{download}</button>
+        <button onClick={handleDownload} name='download'>{download}</button>
       </div>
     </section>
   )

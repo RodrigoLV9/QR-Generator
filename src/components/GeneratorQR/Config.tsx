@@ -27,21 +27,21 @@ const Config:React.FC <ConfigProps> = ({setUrl, size, setSize, setColor1, setCol
   return (
     <section className='config'>
       <div className="container-input">
-        <label htmlFor="">URL: </label>
-        <input type="text" placeholder={placeholder} defaultValue={'https://github.com/RodrigoLV9'} onChange={(e)=>setUrl(e.target.value)}/>
+        <label htmlFor='url-text'>URL: </label>
+        <input type="text" placeholder={placeholder} defaultValue={'https://github.com/RodrigoLV9'} onChange={(e)=>setUrl(e.target.value)} id='url-text'/>
       </div>
       <div className="options">
         <div className="container-input">
-          <label htmlFor="">{sizeText}: {size}px</label>
-          <input type="range" name="" id="" min={50} max={300} defaultValue={100} onChange={(e)=>setSize(parseInt(e.target.value))}/>
+          <label htmlFor='size'>{sizeText}: {size}px</label>
+          <input type="range" id="size" min={50} max={300} defaultValue={100} onChange={(e)=>setSize(parseInt(e.target.value))}/>
         </div>
         <div className="container-input">
-          <label htmlFor="">{colorLight}:</label>
-          <input type="color" name="" id="" defaultValue={'#ffffff'} onChange={(e)=>setColor1(e.target.value)}/>
+          <label htmlFor="color-light">{colorLight}:</label>
+          <input type="color" id="color-light" defaultValue={'#ffffff'} onChange={(e)=>setColor1(e.target.value)}/>
         </div>
         <div className="container-input">
-          <label htmlFor="">{colorDark}:</label>
-          <input type="color" name="" id="" defaultValue={'#000000'} onChange={(e)=>setColor2(e.target.value)}/>
+          <label htmlFor="color-dark">{colorDark}:</label>
+          <input type="color" id="color dark" defaultValue={'#000000'} onChange={(e)=>setColor2(e.target.value)}/>
         </div>
       </div>
     </section>

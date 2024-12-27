@@ -18,7 +18,7 @@ const Info:React.FC= () => {
     <section className="info">
         <h2>{title}</h2>
         <div className="info__card">
-            <img src="./images/QR-img.png" alt="cell phone with QR code"/>
+            <img src="./images/QR-img.png" alt="cell phone with QR code" loading='lazy'/>
             <p>{description}</p>
         </div>
         

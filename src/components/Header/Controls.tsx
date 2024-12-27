@@ -20,7 +20,7 @@ const Controls: React.FC = () => {
 
   return (
     <section className='controls'>
-      <select name="idiom" id="" className='idiom' value={language} onChange={handleLanguageChange}>
+      <select name="idiom" id="idiom" className='idiom' value={language} onChange={handleLanguageChange}>
         <option value="es">Es</option>
         <option value="en">En</option>
       </select>
