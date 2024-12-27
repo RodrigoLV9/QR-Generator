@@ -18,13 +18,13 @@ const translations={
 const translationsSteps={
     en:[
         {
-            'title':'Enter the details',
-            'description':'Fill in the fields with all the necessary information. Enter a link, text, contact information or any other information. Then select "Create QR code".',
+            'title':'Enter a URL or text',
+            'description':'Enter a link, text, contact information or any other information and the QR code will immediately be generated.',
             'url':'../../../public/images/image-example.jpg'
         },
         {
-            'title':'Generate the QR code',
-            'description':'Once you have already entered the URL you can generate your unique and permanent QR code.',
+            'title':'Customize your QR code',
+            'description':'Modify other variables such as size and colors to your liking and in real time your QR code will be modified. These variables have an assigned value by default.',
             'url':'../../../public/images/image-example.jpg'
         },
         {
@@ -35,19 +35,19 @@ const translationsSteps={
     ],
     es:[
         {
-            'title':'Introduce los detalles',
-            'description':'Rellena los campos con toda la información necesaria. Introduce un enlace, un texto, información de contacto o cualquier otra información. Luego seleccione "Crear código QR".',
-            'url':'../../../public/images/image-example.jpg'
+            'title':'Introduce una URL o texto',
+            'description':'Introduce un enlace, un texto, información de contacto o cualquier otra información e inmediatamente se generara el codigo QR.',
+            'url':'../../../public/images/step-image1.jpg'
         },
         {
-            'title':'Genera el codigo QR',
-            'description':'Una vez que ya hayas puesto la URL ya puedes generar tu codigo QR unico y permanente.',
-            'url':'../../../public/images/image-example.jpg'
+            'title':'Personaliza tu codigo QR',
+            'description':'Modifica otras variables como el tamaño y colores a tu gusto y en tiempo real tu codigo QR se modificara, estos variables tienen por defecto un valor asignado.',
+            'url':'../../../public/images/step-image2.jpg'
         },
         {
             'title':'Descarga el codigo QR',
             'description':'Descarga tu codigo QR en formato PNG para guardarlo en tu dispositivo y poder usarlo a gusto. El codigo QR es completamente funcional y permanente.',
-            'url':'../../../public/images/image-example.jpg'   
+            'url':'../../../public/images/step-image3.jpg'   
         }
     ]
 };
