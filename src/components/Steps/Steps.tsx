@@ -37,17 +37,17 @@ const translationsSteps={
         {
             'title':'Introduce una URL o texto',
             'description':'Introduce un enlace, un texto, información de contacto o cualquier otra información e inmediatamente se generara el codigo QR.',
-            'url':'../../../public/images/step-image1.jpg'
+            'url':'./images/step-image1.jpg' 
         },
         {
             'title':'Personaliza tu codigo QR',
             'description':'Modifica otras variables como el tamaño y colores a tu gusto y en tiempo real tu codigo QR se modificara, estos variables tienen por defecto un valor asignado.',
-            'url':'../../../public/images/step-image2.jpg'
+            'url':'./images/step-image2.jpg' 
         },
         {
             'title':'Descarga el codigo QR',
             'description':'Descarga tu codigo QR en formato PNG para guardarlo en tu dispositivo y poder usarlo a gusto. El codigo QR es completamente funcional y permanente.',
-            'url':'../../../public/images/step-image3.jpg'   
+            'url':'./images/step-image3.jpg'   
         }
     ]
 };

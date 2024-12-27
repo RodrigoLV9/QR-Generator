@@ -15,7 +15,7 @@ const Brand :React.FC = ()=>{
     const {title,description}=translations[language]
     return(
         <section className='brand'>
-            <img src="../../../public/images/qr-logo.png" alt="QR" />
+            <img src="./images/qr-logo.png" alt="QR logo" />
             <div className="brand__text">
                 <h3>{title}</h3>
                 <p>{description}</p>
